@@ -1,16 +1,20 @@
 #!/usr/bin/env -S julia --project
 module AdventOfCodeDayXX
     function parse_part1(filename::String)
+        for line in eachline(filename)
+        end
     end
 
     function part1(filename::String)
+        input = parse_part1(filename)
     end
 
     function parse_part2(filename::String)
-        parse_part1()
+        parse_part1(filename)
     end
 
     function part2(filename::String)
+        input = parse_part1(filename)
     end
 
     function main()
