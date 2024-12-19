@@ -1,0 +1,150 @@
+function program(A)
+B = 0
+C = 0
+out = Int[]
+
+B = A % 8
+B = xor(B,1)
+C = A >> B
+B = xor(B,5)
+B = xor(B, C)
+push!(out, B % 8)
+
+
+# B % 8 == 2
+
+operand_value = 3
+A = A ÷ 2^operand_value
+operand_value = 0
+operand_value = A
+B = operand_value % 8
+operand_value = 1
+B = xor(B,1)
+operand_value = B
+C = A ÷ 2^operand_value
+operand_value = B
+B = xor(B,5)
+operand_value = 1
+B = xor(B, C)
+operand_value = B
+push!(out, operand_value % 8)
+
+operand_value = 3
+A = A ÷ 2^operand_value
+operand_value = 0
+operand_value = A
+B = operand_value % 8
+operand_value = 1
+B = xor(B,1)
+operand_value = B
+C = A ÷ 2^operand_value
+operand_value = B
+B = xor(B,5)
+operand_value = 1
+B = xor(B, C)
+operand_value = B
+push!(out, operand_value % 8)
+
+operand_value = 3
+A = A ÷ 2^operand_value
+operand_value = 0
+operand_value = A
+B = operand_value % 8
+operand_value = 1
+B = xor(B,1)
+operand_value = B
+C = A ÷ 2^operand_value
+operand_value = B
+B = xor(B,5)
+operand_value = 1
+B = xor(B, C)
+operand_value = B
+push!(out, operand_value % 8)
+
+operand_value = 3
+A = A ÷ 2^operand_value
+operand_value = 0
+operand_value = A
+B = operand_value % 8
+operand_value = 1
+B = xor(B,1)
+operand_value = B
+C = A ÷ 2^operand_value
+operand_value = B
+B = xor(B,5)
+operand_value = 1
+B = xor(B, C)
+operand_value = B
+push!(out, operand_value % 8)
+
+operand_value = 3
+A = A ÷ 2^operand_value
+operand_value = 0
+operand_value = A
+B = operand_value % 8
+operand_value = 1
+B = xor(B,1)
+operand_value = B
+C = A ÷ 2^operand_value
+operand_value = B
+B = xor(B,5)
+operand_value = 1
+B = xor(B, C)
+operand_value = B
+push!(out, operand_value % 8)
+
+operand_value = 3
+A = A ÷ 2^operand_value
+operand_value = 0
+operand_value = A
+B = operand_value % 8
+operand_value = 1
+B = xor(B,1)
+operand_value = B
+C = A ÷ 2^operand_value
+operand_value = B
+B = xor(B,5)
+operand_value = 1
+B = xor(B, C)
+operand_value = B
+push!(out, operand_value % 8)
+
+operand_value = 3
+A = A ÷ 2^operand_value
+operand_value = 0
+operand_value = A
+B = operand_value % 8
+operand_value = 1
+B = xor(B,1)
+operand_value = B
+C = A ÷ 2^operand_value
+operand_value = B
+B = xor(B,5)
+operand_value = 1
+B = xor(B, C)
+operand_value = B
+push!(out, operand_value % 8)
+
+operand_value = 3
+A = A ÷ 2^operand_value
+operand_value = 0
+operand_value = A
+B = operand_value % 8
+operand_value = 1
+B = xor(B,1)
+operand_value = B
+C = A ÷ 2^operand_value
+operand_value = B
+B = xor(B,5)
+operand_value = 1
+B = xor(B, C)
+operand_value = B
+push!(out, operand_value % 8)
+
+operand_value = 3
+A = A ÷ 2^operand_value
+operand_value = 0
+#return out == [2, 4, 1, 1, 7, 5, 1, 5, 4, 1, 5, 5, 0, 3, 3, 0]
+#push!(out, operand_value % 8)
+return out
+end
